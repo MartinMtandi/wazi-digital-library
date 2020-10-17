@@ -1,0 +1,46 @@
+.slider{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.images{
+    display: flex;
+    width: 100%;
+}
+
+.images img{
+    height: 480px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+
+.images input{
+    display: none;
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dots label{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: solid #2d3748 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 2px;
+}
+
+.dots label:hover{background: #2d3748;}
+
+#image-01:checked ~ .m1{
+    margin-left: 0;
+}
+
+#image-02:checked ~ .m2{
+    margin-left: -100%;
+}

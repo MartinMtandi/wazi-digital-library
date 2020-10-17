@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./main.css">
     <title>Wazi Digital Library</title>
 </head>
 <body>
@@ -12,15 +13,15 @@
         <div class="container mx-auto md:px-24 flex items-center justify-between">
             <div class="flex items-center">
                 <img src="./images/logo.jpeg" class="h-16 mr-6" alt="Logo">
-                <div class="flex items-center px-3 cursor-pointer hidden md:block">
+                <div class="md:flex md:items-center px-3 cursor-pointer hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a5568" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
                     <span class="px-2 text-lg text-gray-800">Browse</span>
                 </div>
-                <div class="flex items-center px-3 cursor-pointer hidden md:block">
+                <div class="md:flex md:items-center px-3 cursor-pointer hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a5568" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
                     <span class="px-2 text-lg text-gray-800">Rankings</span>
                 </div>
-                <div class="flex items-center px-3 cursor-pointer hidden md:block">
+                <div class="md:flex md:items-center px-3 cursor-pointer hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a5568" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pen-tool"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
                     <span class="px-2 text-lg text-gray-800">Create</span>
                 </div>
@@ -36,5 +37,117 @@
             </div>
         </div>
     </nav>
+    <!-- Slider -->
+    <div class="slider">
+        <div class="images">
+            <input type="radio" name="slide" id="image-01" checked />
+            <input type="radio" name="slide" id="image-02" />
+
+            <img class="m1 object-cover w-full bg-center" src="images/book.jpg" alt="image-01"/>
+            <img class="m2 object-cover w-full bg-center" src="images/book1.jpg" alt="image-02"/>
+        </div>
+        <div class="dots">
+            <label for="image-01"></label>
+            <label for="image-02"></label>
+        </div>
+    </div>
+    <!-- New ongoing release -->
+    <div class="container mx-auto md:px-24 text-gray-800 py-6">
+        <div class="grid grid-cols-12 gap-4">
+            <div class="col-span-3">
+                <img class="h-8" src="images/quotation-02.svg" />
+            </div>
+            <div class="col-span-6 text-center">
+                <p>It's like pokemon. But the monsters are trying to kill you.</p>
+                <h1 class="font-medium text-lg text-gray-600">- Master Paradise</h1>
+                <button class="mx-auto my-4 rounded-full px-6 py-2 bg-blue-600 text-white font-medium hidden md:block">Sign In</button>
+            </div>
+            <div class="col-span-3 text-right">
+                <img class="h-8 float-right" src="images/quotation-01.svg" />
+            </div>
+        </div>
+        <div class="pt-10">
+            <div class="flex justify-between items-end">
+                <h1 class="font-semibold text-2xl">New Ongoing Releases</h1>
+                <p class="text-blue-600">See More</p>
+            </div>
+            <div class="grid grid-rows-2 grid-flow-col gap-4 py-4">
+                <div class="row-span-2 col-span-1">
+                    <img src="images/books/book.jpg" />
+                </div>
+                <div class="row-span-1 col-span-6 grid grid-cols-4 gap-4">
+                    <div>
+                        <div>
+                            <img src="images/books/book-1.jpg" />
+                        </div>
+                        <div class="py-2">
+                            <p class="truncate">Giada De Laurentiis is one of America’s most-loved culinary stars, adored for her Food</p>
+                            <p class="text-gray-600 font-medium">Fiction & Fantasy</p>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f6ad55" stroke="#f6ad55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f6ad55" stroke="#f6ad55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f6ad55" stroke="#f6ad55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a0aec0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a0aec0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <p class="text-gray-600 text-sm mx-1">3.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="images/books/book-2.jpg" />
+                        </div>
+                        <div class="py-2">
+                            <p class="truncate">Giada De Laurentiis is one of America’s most-loved culinary stars, adored for her Food</p>
+                            <p class="text-gray-600 font-medium">Romatic Comedy</p>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f6ad55" stroke="#f6ad55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f6ad55" stroke="#f6ad55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f6ad55" stroke="#f6ad55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a0aec0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a0aec0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <p class="text-gray-600 text-sm mx-1">3.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="images/books/book-3.jpg" />
+                        </div>
+                        <div class="py-2">
+                            <p class="truncate">Giada De Laurentiis is one of America’s most-loved culinary stars, adored for her Food</p>
+                            <p class="text-gray-600 font-medium">Thriller</p>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f6ad55" stroke="#f6ad55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f6ad55" stroke="#f6ad55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f6ad55" stroke="#f6ad55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a0aec0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a0aec0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <p class="text-gray-600 text-sm mx-1">3.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="images/books/book-4.jpg" />
+                        </div>
+                        <div class="py-2">
+                            <p class="truncate">Giada De Laurentiis is one of America’s most-loved culinary stars, adored for her Food</p>
+                            <p class="text-gray-600 font-medium">Health & Fitness</p>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f6ad55" stroke="#f6ad55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f6ad55" stroke="#f6ad55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f6ad55" stroke="#f6ad55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a0aec0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a0aec0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <p class="text-gray-600 text-sm mx-1">3.0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-span-1 col-span-4"></div>
+              </div>
+        </div>
+    </div>
 </body>
 </html>
